@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 body {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .wrap {
   display: block;
@@ -24,7 +24,7 @@ body {
   flex-wrap: wrap;
   flex: 2;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 32px;
   position: relative;
 }
 .form-message {
@@ -46,16 +46,23 @@ body {
 }
 .form-item.invalid input {
   border: solid 2px red;
+  background-color: rgb(247, 228, 228);
 }
 .form-item.invalid span {
   color: red;
-}
-.controls {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .img-ctl.main:hover{
   opacity: 0.6;
   cursor: pointer;
+}
+.img-avt {
+  margin-top: 30px;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .img-ctl {
   width: 100px;
@@ -69,18 +76,15 @@ body {
   display: none;
   margin: 0 auto;
 }
-.controls-btn {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-#add {
+#submit {
   padding: 10px 50px;
+  width: 130px;
   border-radius: 10px;
   cursor: pointer;
 }
 #reset {
   padding: 10px 50px;
+  width: 130px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -122,10 +126,10 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  #add ,#reset {
+  #submit ,#reset {
     
     margin: 10px 0;
-    padding: 10px 0;
+    padding: 10px 35px;
     width: 100px;
   }
   .view {

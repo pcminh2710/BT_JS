@@ -49,22 +49,16 @@
                     onblur="handleBlurRequired(event)" oninput="handleInputConfirmPass(event)" value="">
                     <span class="form-message"> </span>
                 </div>
+                <div class="img-avt">
+                    <input type='file' id="inputimg" />
+                    <img class="img-ctl main" onclick="uploadAvt()" id="myimg"
+                        src="https://st.quantrimang.com/photos/image/2017/04/08/anh-dai-dien-FB-200.jpg" alt="">
+                </div>
+                <div class="btn">
+                    <button id="submit" method="post" name="submit" class="btn btn-primary">Add</button>
+                    <button type="reset" id="reset" method="post" class="btn btn-primary" onclick="reeset()">Reset</button>
+                </div>
             </form>
-        </div>
-        <div class="controls">
-            <div class="control__avtupload">
-                <input type='file' id="inputimg" />
-                <img class="img-ctl main" onclick="uploadAvt()"
-                    src="https://st.quantrimang.com/photos/image/2017/04/08/anh-dai-dien-FB-200.jpg" alt="">
-            </div>
-            <div class="controls-btn">
-                <div class="control__add">
-                    <button id="add" onclick="add()"> Add </button>
-                </div>
-                <div class="control__reset">
-                    <button id="reset" onclick="reset()"> Reset</button>
-                </div>
-            </div>
         </div>
         <div class="view">
             <div class="view_text">
@@ -86,7 +80,7 @@
                 </div>
             </div>
             <div class="view__avt">
-                <img class="img-ctl end" id="file"
+                <img class="img-ctl end" id="avata"
                     src="https://st.quantrimang.com/photos/image/2017/04/08/anh-dai-dien-FB-200.jpg" alt="">
             </div>
         </div>
